@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BrandCatalog from '../components/BrandCatalog.astro';
+import productsData from '../data/products.json';
+
+const kluberProducts = productsData.filter(p => p.brandSlug === 'kluber');
+---
+
+<Layout 
+  title="Klüber Kompresör Yağları | Toptan & Perakende Satış"
+  description="Klüber Summit ve endüstriyel soğutma kompresör yağları toptan ve perakende satış fiyatları. Hızlı teslimat ve kurumsal teklif avantajı."
+>
+  <BrandCatalog 
+    brandName="Klüber"
+    brandSlug="kluber"
+    categoryName="Kompresör Yağları"
+    products={kluberProducts}
+    bannerImage="/images/banners/hero-artoil.jpg"
+    description="Klüber yüksek performanslı sentetik kompresör yağları, ağır endüstriyel koşullarda maksimum aşınma direnci ve enerji verimliliği sunar."
+  />
+</Layout>
