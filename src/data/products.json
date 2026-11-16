@@ -481,6 +481,43 @@
     ]
   },
   {
+    "id": "castrol-aircol-pd-100-16-kg",
+    "title": "Castrol Aircol PD 100 - 16 Kg",
+    "brand": "Castrol",
+    "brandSlug": "castrol",
+    "viscosity": "ISO VG 100",
+    "pack": "16 KG",
+    "image": "/images/products/castrol-aircol-pd-100-16-kg.png",
+    "shortDesc": "Castrol kalitesiyle vidalı, paletli ve pistonlu kompresör sistemlerinde üstün aşınma koruması, yüksek oksidasyon direnci ve uzun yağ değişim ömrü sunan ISO VG 100 kompresör yağı.",
+    "description": "Castrol Aircol PD 100 - 16 Kg, endüstriyel vidalı, pistonlu ve paletli hava kompresörleri ile endüstriyel soğutma kompresörlerinde yüksek basınç ve sıcaklık altında üstün yağlama ve termal stabilite sağlamak üzere geliştirilmiş premium kompresör yağıdır. Castrol kalitesiyle formüle edilen bu ürün, kompresör bileşenlerinde karbonlaşma, vernik ve tortu oluşumunu engelleyerek valf ve vida bloklarını aşınmalara karşı maksimum düzeyde korur. Mükemmel hava ayrışması ve köpük direnci sayesinde yağ filmi sürekliliğini garanti eder, filtre ömrünü uzatır ve enerji tasarrufu sağlayarak plansız duruş maliyetlerini en aza indirir. Tüm sanayi tipi kompresör üretici toleranslarına tam uyumludur.",
+    "usage": "Endüstriyel Vidalı & Pistonlu Kompresörler",
+    "msdsUrl": "#",
+    "tdsUrl": "#",
+    "name": "Castrol Aircol PD 100 - 16 Kg",
+    "packageType": "16 KG",
+    "brandName": "Castrol",
+    "packageSize": "16 KG",
+    "shortDescription": "Castrol kalitesiyle vidalı, paletli ve pistonlu kompresör sistemlerinde üstün aşınma koruması, yüksek oksidasyon direnci ve uzun yağ değişim ömrü sunan ISO VG 100 kompresör yağı.",
+    "specs": [
+      {
+        "label": "Viskozite",
+        "value": "ISO VG 100"
+      },
+      {
+        "label": "Kullanım Alanı",
+        "value": "Endüstriyel Vidalı & Pistonlu Kompresörler"
+      },
+      {
+        "label": "Ambalaj",
+        "value": "16 KG"
+      },
+      {
+        "label": "Marka",
+        "value": "Castrol"
+      }
+    ]
+  },
+  {
     "id": "castrol-aircol-sn-68-20-l",
     "title": "Castrol Aircol SN 68 - 20 L",
     "brand": "Castrol",

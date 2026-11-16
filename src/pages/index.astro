@@ -4,16 +4,17 @@ import ProductCard from '../components/ProductCard.astro';
 import products from '../data/products.json';
 import blogPosts from '../data/blogPosts.json';
 
-const artoilProducts = products.filter(p => p.brand === 'artoil');
-const castrolProducts = products.filter(p => p.brand === 'castrol');
-const mobilProducts = products.filter(p => p.brand === 'mobil');
-const poProducts = products.filter(p => p.brand === 'petrol-ofisi');
-const shellProducts = products.filter(p => p.brand === 'shell');
+const artoilProducts = products.filter(p => (p.brandSlug || p.brand?.toLowerCase()) === 'artoil');
+const castrolProducts = products.filter(p => (p.brandSlug || p.brand?.toLowerCase()) === 'castrol');
+const mobilProducts = products.filter(p => (p.brandSlug || p.brand?.toLowerCase()) === 'mobil');
+const poProducts = products.filter(p => (p.brandSlug || p.brand?.toLowerCase().replace(/\s+/g, '-')) === 'petrol-ofisi');
+const shellProducts = products.filter(p => (p.brandSlug || p.brand?.toLowerCase()) === 'shell');
+const kluberProducts = products.filter(p => (p.brandSlug || p.brand?.toLowerCase()).includes('klub'));
 ---
 
 <Layout
   title="kompresör yağı Fiyatları & Çeşitleri | Toptan Endüstriyel Yağlar"
-  description="Artoil, Castrol, Mobil, Petrol Ofisi ve Shell kompresör yağı çeşitleri. ISO VG 32, 46, 68 endüstriyel hidrolik sistem yağlarında toptan iskonto ve aynı gün stoktan sevkiyat."
+  description="Shell, Mobil, Castrol, Petrol Ofisi, Artoil ve Klüber kompresör yağı çeşitleri. Vidalı, pistonlu ve soğutma kompresörleri için toptan iskonto ve aynı gün stoktan sevkiyat."
 >
   <!-- HERO BRAND BANNERS SHOWCASE (Mobile Responsive, 5 Inner Brand Links) -->
   <section class="banner-grid-section" aria-label="Markalarımız ve kompresör yağı Çeşitleri">
@@ -270,20 +271,38 @@ const shellProducts = products.filter(p => p.brand === 'shell');
     </div>
   </section>
 
+  
+  <!-- BRAND SECTION: KLUBER -->
+  {kluberProducts.length > 0 && (
+    <section id="kluber" class="brand-catalog-section">
+      <div class="container">
+        <div class="brand-heading-center">
+          <h2 class="section-heading-lg">Klüber Kompresör Yağı</h2>
+        </div>
+        <div class="section-divider-line"></div>
+
+        <div class="product-cards-grid">
+          {kluberProducts.map(p => (
+            <ProductCard product={p} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
   <!-- SEO CONTENT ARTICLE -->
   <section class="seo-text-section">
     <div class="container">
       <div class="section-divider-line"></div>
       <div class="seo-content-box">
-        <h3>kompresör yağı Nedir?</h3>
-        <p>kompresör yağı, çeşitli endüstriyel ve otomotiv uygulamalarında sıklıkla kullanılan bir sıvıdır. Su ile birlikte, hidrolik sistemlerin temel bileşenlerinden birini oluşturan bu yağ, mekanik ekipmanların çalışmasını sağlamak, enerji iletimini kolaylaştırmak ve sistemin genel verimliliğini artırmak amacıyla tasarlanmıştır.</p>
+        <h3>Kompresör Yağı Nedir ve Ne İşe Yarar?</h3>
+        <p>Kompresör yağı; endüstriyel vidalı, pistonlu, paletli hava kompresörleri ve soğutma kompresörlerinde sürtünmeyi en aza indiren, aşınmaları önleyen ve vida blokları ile valf gruplarında mükemmel sızdırmazlık sağlayan özel formüle edilmiş endüstriyel yağlardır.</p>
 
-        <h3>kompresör yağının Tanımı ve Özellikleri</h3>
-        <p>kompresör yağı, yüksek basınç altında etkili bir şekilde çalışan ve enerji iletimi için gereksinim duyulan bir sıvıdır. Temel özellikleri arasında yüksek viskozite, düşük buharlaşma oranı, geniş sıcaklık aralığında stabil kalabilme yeteneği ve iyi bir akışkanlık bulunmaktadır.</p>
-        <p>Aynı zamanda kompresör yağıları, metal yüzeyler arasında iyi bir yağlama sağlamak amacıyla aşınmayı azaltıcı ve korozyon önleyici katkı maddeleri ile zenginleştirilmiştir.</p>
+        <h3>Kompresör Yağının Temel Fonksiyonları ve Özellikleri</h3>
+        <p>Hava sıkıştırma sürecinde ortaya çıkan yoğun ısıyı hızla tahliye ederek soğutma sağlar, yüksek termal ve oksidatif kararlılığı sayesinde karbonlaşma, vernik ve tortu oluşumunu engeller. Mükemmel hava ayrışması ve su tahliye kabiliyeti ile kompresör filtre ve separatörlerinin servis ömrünü uzatır.</p>
 
-        <h3>kompresör yağının Çeşitleri & Kullanım Alanları</h3>
-        <p>Mineral yağlar doğal kaynaklardan elde edilirken, sentetik kompresör yağılar belirli sıcaklık ve aşırı basınç koşulları için optimize edilmiştir. Otomotiv sektöründe güç aktarma sistemleri, inşaat ekipmanları, tarım makineleri, sanayi makineleri ve enerji santralleri en yaygın kullanım alanlarıdır.</p>
+        <h3>Vidalı, Pistonlu ve Soğutma Kompresör Yağları</h3>
+        <p>ISO VG 32, 46 ve 68 viskozite derecelerindeki sentetik (PAO, ester) ve birinci sınıf mineral yağlar modern döner vidalı kompresörlerde tercih edilirken; ISO VG 100 ve 150 viskoziteler pistonlu kompresör silindirlerinde güvenilir yağlama filmi sağlar. Soğutma kompresörlerinde ise POE ve PAG sentetik yağlar soğutucu gazlarla tam uyumluluk sunar.</p>
       </div>
     </div>
   </section>
