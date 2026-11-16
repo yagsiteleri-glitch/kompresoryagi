@@ -10,7 +10,9 @@
       "<p>Kompresör üreticinizin belirlediği ISO VG sınıfına uygun yağ seçilmelidir. Ortam sıcaklığı yüksek veya ağır hizmet koşullarında çalışan kompresörlerde sentetik ester veya PAO bazlı yağlar karbonlaşmayı sıfıra indirir.</p>",
       "<h2>Yağ Değişim Sıklığı</h2>",
       "<p>Mineral yağlar genellikle 2.000 – 4.000 çalışma saati ömür sunarken, sentetik Shell Corena veya Mobil Rarus serisi yağlar 8.000 saate kadar güvenli çalışma aralığı sağlar.</p>"
-    ]
+    ],
+    "image": "/images/blog/vidali-kompresor-yag-secimi.jpg",
+    "category": "Kompresör Bakımı"
   },
   {
     "slug": "pistonlu-kompresor-yaglarinda-karbonlasma-ve-valf-temizligi",
@@ -21,7 +23,9 @@
       "<p>Pistonlu hava kompresörlerinde sıkıştırma odasındaki anlık sıcaklıklar 200°C seviyelerine kadar çıkabilir. Bu yüksek termal stres, kalitesiz madeni yağların valf ve kafa contalarında yanarak sert karbon tabakaları (kok) oluşturmasına yol açar.</p>",
       "<h2>Karbonlaşmanın Tehlikeleri</h2>",
       "<p>Karbonlaşan valfler tam kapanamaz, basınç kaybına neden olur ve kızgın hava geri tepmesi sonucu kompresör hattında patlama veya yangın riski doğurabilir. Düşük karbon kalıntısı bırakan özel DIN 51506 VDL sınıfı kompresör yağları tercih edilmelidir.</p>"
-    ]
+    ],
+    "image": "/images/blog/pistonlu-kompresor-karbonlasma.jpg",
+    "category": "Teknik Rehber"
   },
   {
     "slug": "sogutma-kompresorlerinde-poe-ve-pag-sentetik-yaglarin-onemi",
@@ -32,6 +36,8 @@
       "<p>Soğutma tesisleri ve soğuk hava depolarında kullanılan kompresörler, geleneksel hava kompresörlerinden tamamen farklı bir yağlama kimyasına ihtiyaç duyar. Yağ, soğutucu gaz ile sistem boyunca dolaşır ve evaporatörde donmadan kompresöre geri dönmelidir.</p>",
       "<h2>Mobil EAL Arctic ve Shell Refrigeration Çözümleri</h2>",
       "<p>HFC gazlarıyla tam karışabilirlik sunan Polyolester (POE) yağlar, düşük akma noktaları sayesinde genleşme valflerinde tıkanmayı önler ve yüksek verim sağlar.</p>"
-    ]
+    ],
+    "image": "/images/blog/sogutma-kompresor-poe-pag.jpg",
+    "category": "Soğutma Sistemleri"
   }
 ]
